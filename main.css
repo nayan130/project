@@ -1,0 +1,239 @@
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1d3557;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align:middle;
+  padding: 20px 60px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.con {
+  display: block;
+  color: white;
+  text-align:middle;
+  padding: 20px 60px;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: #2d6a4f;
+}
+.con:hover {
+  background-color: #48cae4;
+}
+
+li a:hover {
+  background-color: #48cae4;
+}
+
+.cv {
+  background-image: url("grass.jpg");
+  font-style: initial;
+  font-size: 25px;
+  text-align: center;
+  color: #edf6f9
+}
+.table {
+  color:blue;
+  text-align:center; 
+  margin-right: 20px;
+  font-size: 30px;
+  background-color: #84a98c;
+}
+
+.bod {
+  color: rgb(248, 10, 10);
+  height: 800px;
+  background-image: url("grass.jpg");
+  background-color: blue;
+}
+.bodet {
+  bottom: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.pa {
+  text-align: center;
+  bottom: 20%;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.sr {
+  max-width: 30%;
+  height: auto;
+  width: 350;
+}
+
+h2 {
+  text-align: center;
+}
+/* Project Section */
+
+.proj{
+  font-family: 'Poppins', sans-serif;
+  background-color:#D1FB68;
+  padding:20px;
+}
+
+.main{
+  display:flex;
+  width:100%;
+}
+
+.main{
+  flex-direction:row;
+}
+
+
+.col{
+  height:90%;
+  background-color:#ed8282;
+  margin:10px;
+  padding:20px;
+  width:30%;
+}
+
+.col:hover{
+  background-color:#6663fe;
+}
+
+
+@media screen and ( max-width:768px ) {
+  .main{
+      flex-direction:column;
+  }
+
+  .col{
+      width:80%;
+      height:auto;
+      margin:auto;
+      margin-bottom:10px;
+
+  }
+}
+
+.sr {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+.h {
+    text-align: center;
+    color: rgb(13, 3, 48);
+}
+
+footer {
+  background-color: midnightblue;
+  color: #edf6f9;
+  text-align: center;
+  height: 20px;
+}
+
+
+/* Table Section */
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+   
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+   
+  text-align: left; 
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr { 
+  display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td { 
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  padding-left: 50%; 
+}
+
+td:before { 
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px; 
+  white-space: nowrap;
+}
+
+/*
+Label the data
+*/
+td:nth-of-type(1):before { content: "First Name"; }
+td:nth-of-type(2):before { content: "Last Name"; }
+td:nth-of-type(3):before { content: "Job Title"; }
+td:nth-of-type(4):before { content: "Favorite Color"; }
+td:nth-of-type(5):before { content: "Wars of Trek?"; }
+td:nth-of-type(6):before { content: "Secret Alias"; }
+td:nth-of-type(7):before { content: "Date of Birth"; }
+td:nth-of-type(8):before { content: "Dream Vacation City"; }
+td:nth-of-type(9):before { content: "GPA"; }
+td:nth-of-type(10):before { content: "Arbitrary Data"; }
+}
